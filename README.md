@@ -1,6 +1,6 @@
 # Covid-Junction
 
-## Your one stop platform to cater all your needs!
+## _Your one stop platform to cater all your needs!_
 
 ## Team Members:
 ### Avnish Singh.
