@@ -1,4 +1,4 @@
-# Covid-Junction
+# **Covid-Junction**
 
 ## _Your one stop platform to cater all your needs!_
 
