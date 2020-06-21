@@ -1,0 +1,620 @@
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e1bfe7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+ 
+/* fixed and styling logo div and image inside it */
+.logo{
+   display:block;
+   float: left;
+   position:fixed;
+   top:0px;
+   bottom: 0px;
+   }
+   img{
+    height: 40px;
+    width: 70px;
+   }
+
+   
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(95, 168, 190);
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(235, 168, 168);
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* disbale hover on logo */
+.logo{
+  pointer-events: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+#bg-image{
+  width:100%;
+  background-image: url(covidmap.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 50px;
+  color: white;
+  margin-top: 1px;
+  opacity: 0.7;
+}
+
+
+#contentbg{
+  background-color: rgba(0,0,0,0.75);
+  max-width: 450px;
+  padding: 40px 60px;
+  margin-top:8rem;
+} 
+#contentbg h1{
+  font-family:Times, "Times New Roman", serif;
+  font-size: 3rem;
+}
+
+/* #contentbg h4{
+  
+  font-size: 1.5rem;
+  color: rgb(39, 204, 149);
+  word-spacing: 0.25rem;
+} */
+
+#bg-image span{
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  max-width: 450px;
+  word-spacing:0.2rem ;
+
+}
+
+.updatesbg {
+  width:100%;
+  background-image: url(sec2.jpg);
+  height: 850px;
+  background-repeat:repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 50px;
+  color: white;
+  margin-top: 4px;
+  opacity: 0.75;
+}
+
+
+.heading1 h1{
+    /* background-color: rgba(131, 105, 133, 0.7) ;   */
+    background-color: rgba(219, 159, 219, 0.7) ;  
+    /* color:   rgb(78, 6, 6) ; */
+    color:   rgb(68, 14, 14) ;
+    border:1px solid rgb(219, 105, 214);
+    border-left: none;
+         max-width: 450px;
+    padding: 1.2rem 3.7rem;
+    font-family:Times, "Times New Roman", serif;
+    font-size: 2rem;
+    position: absolute;
+    top:45rem;
+  }
+  
+  /* responsive text of 1st image */
+  @media screen and (max-width: 406px) {
+    div#contentbg h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* responsive text of 2nd image */
+@media screen and (max-width: 471px) {
+    div.heading1 h1 {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 255px) {
+    div.heading1 h1 {
+      font-size: 1rem;
+    }
+  }
+  
+  #details {
+    margin: auto;
+    text-align: center;
+    padding-top: 0.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+    color:black;
+    font-size:1rem;
+  } 
+.number {
+    font-weight: 700;
+    color: #696969;
+    font-size: 3.1rem;
+}
+div#worldo{
+    display: block;
+     border: 1px solid black;
+     float:left;
+     padding : 2rem;
+     background: rgba(235, 216, 208, 0.7);
+     margin-top: 5rem;
+     margin-left: 4rem;;
+     margin-right: 4rem;
+  } 
+  #worldo img{
+    width:20%;
+  }
+
+  @media screen and (max-width: 420px) {
+    div #details{
+      font-size:0.5rem;
+    }
+     div.number{
+       font-size: 1rem;
+     }
+  }
+
+  @media screen and (max-width: 310px) {
+    div #worldo{
+      margin-left: 1.5rem;
+      margin-right:1.5rem;
+     }
+  }
+
+
+
+  @media screen and (max-width: 551px) {
+    div#worldo{
+        margin-top: 6rem;
+    }
+  }
+
+  
+table {
+  border: 2px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: 1;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  color:black;
+}
+
+th{
+  height:2rem;
+  background-color: rgb(158, 250, 129);
+  border: 2px solid black;
+  position: sticky;
+  top:0;
+  
+}
+td{
+  border: 1px solid rgb(201, 201, 201);
+  font-size: 1.2rem;
+  height: 1.5rem;
+}
+tr:nth-child(even){background-color: #f1f1d1}
+tr:nth-child(odd){background-color: #d9e8f0}
+
+#data
+{
+  overflow:auto;
+  height:34rem;
+}
+#tableouter{
+  float:right;
+  padding : 2rem;
+     background: rgba(114, 119, 122, 0.8) ;  
+      margin-top: 2rem;
+     padding-top: 1rem;
+     margin-left: 4rem;;
+     margin-right: 4rem;
+
+}
+
+.caption h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  border: 1px solid black;
+  padding:0.5rem;
+  color:brown;
+  background-color: rgb(201, 231, 243);
+}
+
+div .last1{
+   font-family:'Times New Roman', Times, serif;
+   color: black;
+   border: 1px solid black;
+   background-color: rgb(185, 236, 228);
+   padding-left: 1rem;
+   padding-bottom: 0.5rem;
+  }
+.last1 a{
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1244px) {
+  div#tableouter{
+    margin-top: 4rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 1145px) {
+  div#tableouter{
+    float:left;
+     margin-left: 4rem;
+    margin-top:4rem;
+  }
+  .updatesbg {
+    height:100rem;
+  }
+}
+
+
+
+  @media screen and (max-width: 728px) {
+    div#tableouter{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+  }
+
+@media screen and (max-width: 520px) {
+  div#tableouter{
+      margin-left: 2rem;
+      margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  div#tableouter{
+      margin-left: 1.5rem;
+      margin-right: 2rem;
+      max-width: 75%;
+      /* padding:0; */
+  }
+
+div.heading1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+}
+
+@media screen and (max-width: 406px) {
+  div#tableouter{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 60%;
+    /* padding:0; */
+}
+}
+/* .caption h1{
+  font-size: 1rem;
+}
+th{
+  font-size: 1.2rem;
+  
+}
+tr{
+ font-size: 1.2rem;
+ 
+}
+td{
+ font-size: 1.2rem;
+}
+} */
+
+
+
+/* external styling for contents page page */
+#bgimg2{
+  width:100%;
+  background-image: url(sec3.jpg);
+  height: 38rem;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  opacity: 0.75;
+  overflow: auto;
+  /* height:100%; */
+}
+
+#a1{
+  background-color: rgba(0,0,0,0.8);
+  float:left;
+  max-width: 450px;
+  padding: 40px 60px;  
+  font-family:Times, "Times New Roman", serif;
+  font-size: 1.7rem;
+  border:1px solid black;
+}
+
+.links1{
+  float:right;
+  background-color: rgba(173, 235, 145, 0.8);
+  font-family:Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  margin-left:4rem;
+  margin-right:4rem;
+  margin-top:8rem;
+}
+.links1 span{
+  color: black;
+}
+
+@media screen and (max-width: 1278px) {
+#bgimg2 {
+  height:100rem; 
+}
+}
+@media screen and (max-width: 620px) {
+#a1{
+  font-size: 1.3rem;
+  max-width: 70%;
+}
+}
+@media screen and (max-width: 324px) {
+  #a1{
+    max-width: 50%;
+    font-size: 1rem;
+  }
+  .links1 {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 264px) {
+  #a1{
+    max-width: 50%;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .links1{
+    margin-left: 4rem;
+    max-width: 80%;
+    padding-right:2rem;
+  }
+}
+
+/* footer part styling */
+
+ 
+footer{
+  background-color: #1173c4;
+  margin: 0;
+  height:21rem;
+
+}
+#contact{
+  float: left;
+}
+.ques{
+  /* border: 1px solid black; */
+  float: left;
+  color: white;
+  text-align: center;
+  height: 16rem;
+  max-width: 22rem;
+  margin-left: 3rem;
+
+}
+.ques p{
+   font-size: 1.5rem;
+   text-align: left;
+   padding-left: 5%;
+}
+.emails{
+  color:white;
+  /* border: 1px solid black; */
+  height: 16rem;
+  /* width: 22rem;      */
+  float: right;
+  margin-left: 15rem;
+  max-width: 22rem;
+
+}
+.emails li{
+  font-size: 1.3rem;
+}
+.cr h4{
+  /* border: 1px solid black; */
+  height: 2rem;
+  margin-top:16rem;
+  padding-top:1rem;
+  /* width: 23%; */
+  text-align:center;
+  color:yellow;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1045px) {
+  .emails{
+    margin-left:5rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .emails{
+    margin-left:2rem;
+
+  }
+  .ques {
+   font-size: 0.8rem;
+   margin-left:2rem;
+  }
+  .emails{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 781px) {
+ footer{
+   height:45rem;
+ }
+.emails{
+margin-left:2rem;
+margin-right: 3rem;
+}
+}
+
+@media screen and (max-width: 450px) {
+  .ques {
+    font-size: 0.5rem;
+    height:14rem;
+    max-width: 15rem;
+}
+.emails{
+  font-size: 0.5rem;
+  height:12rem;
+  margin-top:4rem ;
+  margin-right: 2rem;
+  max-width: 15rem;
+  margin-bottom: 3rem;
+  margin-left:1rem;
+}
+.emails li{
+ font-size:1rem;
+}
+}
+@media screen and (max-width: 306px) {
+  .ques {
+    font-size: 0.4rem;
+    /* height:14rem; */
+    max-width: 11rem;
+}
+.emails{
+  font-size: 0.5rem;
+  margin-top:5rem ;
+  margin-right: 1rem;
+  max-width: 14rem;
+}
+.emails li{
+ font-size:0.7rem;
+}
+}
+
+
+
