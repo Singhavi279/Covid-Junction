@@ -1,4 +1,4 @@
-# Covid-Junction
+# Covid-Junction : Projrct for hack jaipur hackathon
 
 ## _Your one stop platform to cater all your needs!_
 
